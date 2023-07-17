@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Always-Half Full Showcase</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .l {
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: clip-l 15s linear 0s infinite;
+        }
+
+        div {
+            position: relative;
+        }
+
+        p {
+            width: calc(100% - 48px * 2);
+            height: 1px;
+            margin: 16px 48px;
+            background: #0006;
+        }
+
+        /*
+            0,   0   1,   0      99,   0   100,   0
+            1,   0                         100,   1
+
+            0,  99                         100,  99
+            0, 100   1, 100      99, 100   100, 100
+        */
+
+        @keyframes clip-l {
+
+            0%,
+            100% {
+                clip-path: polygon(
+                    100% -100%,
+                    100% 0%,
+                    0% 100%,
+                    -100% 100%
+                );
+            }
+
+            11% {
+                clip-path: polygon(
+                    100% -100%,
+                    100% 50%,
+                    0% 50%,
+                    0% -100%
+                );
+            }
+
+            22% {
+                clip-path: polygon(
+                    200% 100%,
+                    100% 100%,
+                    0% 0%,
+                    0% -100%
+                );
+            }
+
+            36% {
+                clip-path: polygon(
+                    200% 100%,
+                    50% 100%,
+                    50% 0%,
+                    200% 0%
+                );
+            }
+
+            50% {
+                clip-path: polygon(
+                    0% 200%,
+                    0% 100%,
+                    100% 0%,
+                    200% 0%
+                );
+            }
+
+            61% {
+                clip-path: polygon(
+                    0% 200%,
+                    0% 50%,
+                    100% 50%,
+                    200% 100%
+                );
+            }
+
+            72% {
+                clip-path: polygon(
+                    -100% 0%,
+                    0% 0%,
+                    100% 100%,
+                    100% 200%
+                );
+            }
+
+            86% {
+                clip-path: polygon(
+                    -100% 0%, 
+                    50% 0%,
+                    50% 100%,
+                    -100% 100%
+                );
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="img_1">
+        <img src="1.d.png" class="d">
+        <img src="1.l.png" class="l">
+    </div>
+    <p></p>
+    <div id="img_2">
+        <img src="2.d.png" class="d">
+        <img src="2.l.png" class="l">
+    </div>
+    <p></p>
+    <div id="img_3">
+        <img src="3.d.png" class="d">
+        <img src="3.l.png" class="l">
+    </div>
+</body>
+
+</html>
