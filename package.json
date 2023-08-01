@@ -1,0 +1,43 @@
+{
+    "name": "always--half-full",
+    "displayName": "Always Half-Full",
+    "description": "A happy, colorful theme",
+    "author": {
+        "name": "ScheiBig"
+    },
+    "publisher": "ScheiBig",
+    "version": "0.9.0",
+    "repository": {
+        "url": "https://github.com/NuttyJelly/Always-Half-Full-theme"
+    },
+    "license": "MIT",
+    "icon": "img/icon/icon.png",
+    "engines": {
+        "vscode": "^1.78.0"
+    },
+    "categories": [ "Themes" ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Always Half-Full evening",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Always Half-Full evening.json"
+            },
+            {
+                "label": "Always Half-Full morning",
+                "uiTheme": "vs",
+                "path": "./themes/Always Half-Full morning.json"
+            },
+            {
+                "label": "Always Half-Full afternoon",
+                "uiTheme": "vs",
+                "path": "./themes/Always Half-Full afternoon.json"
+            },
+            {
+                "label": "Always Half-Full midnight",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Always Half-Full midnight.json"
+            }
+        ]
+    }
+}
