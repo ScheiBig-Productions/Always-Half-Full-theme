@@ -14,11 +14,23 @@
             width: 100%;
         }
 
-        .l {
+        .mo, .af, .ev {
             position: absolute;
             top: 0;
             left: 0;
-            animation: clip-l 15s linear 0s infinite;
+        }
+
+        .mo {
+            animation: clip-l 16s linear 0s infinite;
+            
+        }
+
+        .af {
+            animation: clip-l 16s linear -4s infinite;
+        }
+
+        .ev {
+            animation: clip-l 16s linear -8s infinite;
         }
 
         div {
@@ -45,95 +57,116 @@
             0%,
             100% {
                 clip-path: polygon(
+                    0 -100%,
                     100% -100%,
-                    100% 0%,
-                    0% 100%,
-                    -100% 100%
+                    100% 0,
+                    50% 50%,
+                    0 0
                 );
             }
-
-            11% {
+            
+            12.5% {
                 clip-path: polygon(
                     100% -100%,
+                    200% 0,
                     100% 50%,
-                    0% 50%,
-                    0% -100%
+                    50% 50%,
+                    50% 0
                 );
             }
 
-            22% {
+            25% {
                 clip-path: polygon(
+                    200% 0,
                     200% 100%,
                     100% 100%,
-                    0% 0%,
-                    0% -100%
+                    50% 50%,
+                    100% 0
                 );
             }
 
-            36% {
+            37.5% {
                 clip-path: polygon(
-                    200% 100%,
+                    200% -100%,
+                    100% 200%,
                     50% 100%,
-                    50% 0%,
-                    200% 0%
+                    50% 50%,
+                    100% 50%
                 );
             }
 
             50% {
                 clip-path: polygon(
-                    0% 200%,
-                    0% 100%,
-                    100% 0%,
-                    200% 0%
+                    100% 200%,
+                    0 200%,
+                    0 100%,
+                    50% 50%,
+                    100% 100%
                 );
             }
 
-            61% {
+            62.5% {
                 clip-path: polygon(
-                    0% 200%,
-                    0% 50%,
-                    100% 50%,
-                    100% 200%
+                    0 200%,
+                    -100% 100%,
+                    0 50%,
+                    50% 50%,
+                    50% 100%
                 );
             }
 
-            72% {
+            75% {
                 clip-path: polygon(
-                    -100% 0%,
-                    0% 0%,
-                    100% 100%,
-                    100% 200%
+                    -100% 100%,
+                    -100% 0,
+                    0 0,
+                    50% 50%,
+                    0 100%
                 );
             }
 
-            86% {
+            87.5% {
                 clip-path: polygon(
-                    -100% 0%, 
-                    50% 0%,
-                    50% 100%,
-                    -100% 100%
+                    -100% 100%,
+                    0 -100%,
+                    50% 0,
+                    50% 50%,
+                    0 50%
                 );
             }
-
         }
     </style>
 </head>
 
 <body>
     <div id="img_1">
-        <img src="1.d.png" class="d">
-        <img src="1.l.png" class="l">
+        <img src="1.mi.png" class="mi">
+        <img src="1.mo.png" class="mo">
+        <img src="1.af.png" class="af">
+        <img src="1.ev.png" class="ev">
     </div>
     <p></p>
     <div id="img_2">
-        <img src="2.d.png" class="d">
-        <img src="2.l.png" class="l">
+        <img src="2.mi.png" class="mi">
+        <img src="2.mo.png" class="mo">
+        <img src="2.af.png" class="af">
+        <img src="2.ev.png" class="ev">
     </div>
     <p></p>
     <div id="img_3">
-        <img src="3.d.png" class="d">
-        <img src="3.l.png" class="l">
+        <img src="3.mi.png" class="mi">
+        <img src="3.mo.png" class="mo">
+        <img src="3.af.png" class="af">
+        <img src="3.ev.png" class="ev">
     </div>
+    <p></p>
+    <div id="img_4">
+        <img src="4.mi.png" class="mi">
+        <img src="4.mo.png" class="mo">
+        <img src="4.af.png" class="af">
+        <img src="4.ev.png" class="ev">
+    </div>
+    <p></p>
 </body>
 
 </html>
