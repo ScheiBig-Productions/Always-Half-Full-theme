@@ -19,22 +19,22 @@
     "contributes": {
         "themes": [
             {
-                "label": "Always Half-Full evening",
+                "label": "Always Half-Full 🌆 evening",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Always Half-Full evening.json"
             },
             {
-                "label": "Always Half-Full morning",
+                "label": "Always Half-Full 🏙️ morning",
                 "uiTheme": "vs",
                 "path": "./themes/Always Half-Full morning.json"
             },
             {
-                "label": "Always Half-Full afternoon",
+                "label": "Always Half-Full 🌇 afternoon",
                 "uiTheme": "vs",
                 "path": "./themes/Always Half-Full afternoon.json"
             },
             {
-                "label": "Always Half-Full midnight",
+                "label": "Always Half-Full 🌃 midnight",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Always Half-Full midnight.json"
             }

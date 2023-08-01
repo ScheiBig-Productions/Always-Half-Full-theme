@@ -1,6 +1,6 @@
 {
 	"$schema": "vscode://schemas/color-theme",
-	"name": "Always Half-Full afternoon",
+	"name": "Always Half-Full 🌇 afternoon",
 	"type": "light",
 	"include": "./Always Half-Full morning.json",
 	"definedColors": {
