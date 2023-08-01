@@ -16,7 +16,13 @@ __Always Half-Full__ comes with 4 themes, each suitable for different circumstan
 
 ### Showcase
 
-> TODO
+https://github.com/ScheiBig-Production/Always-Half-Full-theme/assets/11073543/034aff49-b0cb-477f-b639-6477a8f23607
+
+https://github.com/ScheiBig-Production/Always-Half-Full-theme/assets/11073543/b4bf668f-2899-4bcd-8bcd-c2bdda2828aa
+
+https://github.com/ScheiBig-Production/Always-Half-Full-theme/assets/11073543/b96acdf8-08c0-466c-99db-0168b5547a0a
+
+https://github.com/ScheiBig-Production/Always-Half-Full-theme/assets/11073543/42f473df-e5f3-45fa-bd1e-7378b3fceeec
 
 List of officially supported languages, as well as one that are planned is [available here](https://github.com/orgs/ScheiBig-Production/projects/1/views/1?sortedBy%5Bdirection%5D=desc&sortedBy%5BcolumnId%5D=Status). Keep in mind that in early stages of development, language priority badge was ignored, in favor of those, that are actually used by author.
 
