@@ -1,7 +1,7 @@
 # ![logo icon small](/img/icon/icon_sm.png) Always Half-Full theme
 
 ### List of all major theming bugs, that have been found to date.
-Keep in mind, that most of those bugs are caused by their respective language extensions. This list only contains deviations from [general coloring scheme](general_coloring_scheme.md) that result from wrongly assigned tokens. For styling that is result of conscious decisions, consult [exceptions from gcs](exceptions_from_gcs.md). This list also won't contain languages, that have minimal syntax support, like CMake, or git-ignore.
+Keep in mind, that most of those bugs are caused by their respective language extensions. This list only contains deviations from [general coloring scheme](general_coloring_scheme.md "General Coloring Scheme") that result from wrongly assigned tokens. For styling that is result of conscious decisions, consult [exceptions from gcs](exceptions_from_gcs.md "Exceptions from GCS"). This list also won't contain languages, that have minimal syntax support, like CMake, or git-ignore.
 
 ### Format:
 Language (Syntax / Semantics provider extension)\

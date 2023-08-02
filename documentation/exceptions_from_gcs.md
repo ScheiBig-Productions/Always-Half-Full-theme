@@ -1,7 +1,7 @@
 # ![logo icon small](/img/icon/icon_sm.png) Always Half-Full theme
 
 ### List of languages, that have their own set of styling rules.
-Languages present in this list are styled in way, that differs from [general coloring scheme](general_coloring_scheme.md). Those are a conscious (but sometimes arbitrary) choices, dictated by language having syntax that is highly abstracted from general purpose programming languages (high generation and/or scripting languages) or are used as structured data representation (mostly configuration, serialization or markup languages); not to be confused with [known bugs](known_bugs.md) that are caused by extensions providing syntax / semantics, that differ from language specification.
+Languages present in this list are styled in way, that differs from [general coloring scheme](general_coloring_scheme.md "General Coloring Scheme"). Those are a conscious (but sometimes arbitrary) choices, dictated by language having syntax that is highly abstracted from general purpose programming languages (high generation and/or scripting languages) or are used as structured data representation (mostly configuration, serialization or markup languages); not to be confused with [known bugs](known_bugs.md "Known Bugs") that are caused by extensions providing syntax / semantics, that differ from language specification.
 
 ## Syntax-modest languages (usually scripting or configuration)
 Languages that provide very limited syntax, or one that purely depends on operator/spacing context (or any other) without actual semantics, try to use styling to provide as much different coloring, as possible, while trying to maintain their general meaning with used style. Those include (but probably are not limited to):
