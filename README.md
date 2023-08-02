@@ -1,4 +1,4 @@
-# ![logo icon small](img/icon/icon_sm.png) Always Half-Full theme
+# ![logo icon small](https://github.com/ScheiBig-Production/Always-Half-Full-theme/blob/main/img/icon/icon_sm.png?raw=true) Always Half-Full theme
 A vibrant-colored VSCode theme that makes you feel like the glass is always half-full.
 
 ### Reasoning 
@@ -16,10 +16,10 @@ __Always Half-Full__ comes with 4 themes, each suitable for different circumstan
 
 ### Showcase
 
-![Welcome screen / settings / console](img/animations/1.gif "Welcome screen / settings / console")
-![File list / Java code / Keybindings table](img/animations/2.gif "File list / Java code / Keybindings table")
-![Project search / JSX code / CSS code](img/animations/3.gif "Project search / JSX code / CSS code")
-![Jupyter notebook with Python kernel / C++ code](img/animations/4.gif "Jupyter notebook with Python kernel / C++ code")
+![Welcome screen / settings / console](https://github.com/ScheiBig-Production/Always-Half-Full-theme/blob/main/img/animations/1.gif?raw=true "Welcome screen / settings / console")
+![File list / Java code / Keybindings table](https://github.com/ScheiBig-Production/Always-Half-Full-theme/blob/main/img/animations/2.gif?raw=true "File list / Java code / Keybindings table")
+![Project search / JSX code / CSS code](https://github.com/ScheiBig-Production/Always-Half-Full-theme/blob/main/img/animations/3.gif?raw=true "Project search / JSX code / CSS code")
+![Jupyter notebook with Python kernel / C++ code](https://github.com/ScheiBig-Production/Always-Half-Full-theme/blob/main/img/animations/4.gif?raw=true "Jupyter notebook with Python kernel / C++ code")
 
 ###### If you want to see smooth animations, or images above didn't load, you can see original animation [here](https://scheibig-production.github.io/Always-Half-Full-theme/ "Showcase animations web page").
 
