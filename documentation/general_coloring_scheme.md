@@ -3,7 +3,7 @@
 ### Set of guidelines, that describe how language tokens are styled.
 This document applies mainly to _general purpose programming languages_. Syntaxes / semantics that are not bound by these rules are described in [exceptions from _GCS_](exceptions_from_gcs.md "Exceptions from GCS"). It also should be noted that while theming rules were implemented as accurately as possible, there is a list of [known bugs](known_bugs.md "Known Bugs") which result from extensions not tokenizing languages precisely according to their specifications.
 
-Below is list of used 'named' colors. However if additional context can be provided, it is done via [text decorations (see table at end of page)](#text-decorations).
+Below is list of used 'named' colors. However if additional context can be provided, it is done via [text decorations (see table at end of page)](#text-decorations "Jump to section on this page").
 
 ## Text colors
 
