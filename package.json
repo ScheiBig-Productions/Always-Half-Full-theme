@@ -14,7 +14,7 @@
     "license": "MIT",
     "icon": "img/icon/icon.png",
     "engines": {
-        "vscode": "^1.78.0"
+        "vscode": "^1.74.0"
     },
     "categories": [ "Themes" ],
     "contributes": {

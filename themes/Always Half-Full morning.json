@@ -214,7 +214,7 @@
 		"button.separator": "#ffffff66",
 		"button.hoverBackground": "#5b96d7",
 		"button.secondaryForeground": "#111111",
-		"button.secondaryBackground": "#ffffff",
+		"button.secondaryBackground": "#396fa522",
 		"button.secondaryHoverBackground": "#5b96d7cc",
 		"checkbox.background": "#ffffff88",
 		"checkbox.foreground": "#1b1b1b",
