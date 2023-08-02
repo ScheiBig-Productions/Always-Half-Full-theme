@@ -1401,6 +1401,7 @@
 				"keyword.other.definition.ini",
 				// Regex back-references
 				"keyword.other.back-reference.regexp",
+				"punctuation.definition.group.regexp variable.other.regexp",
 				// Makefile variables
 				"variable.other.makefile"
 			],
@@ -1467,6 +1468,16 @@
 		},
 		{
 			"scope": [
+				// Regex negative ook-ahead
+				"meta.assertion.negative-look-ahead.regexp"
+			],
+			"settings": {
+				"foreground": "#fa4c94",
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"scope": [
 				// C & C++ macros
 				"entity.name.function.preprocessor"
 			],
@@ -1523,10 +1534,20 @@
 				// Java generic wildcard
 				"storage.type.generic.wildcard.java",
 				// Regex look-behind
-				"meta.assertion.negative-look-ahead.regexp"
+				"meta.assertion.look-behind.regexp"
 			],
 			"settings": {
 				"foreground": "#e318ef"
+			}
+		},
+		{
+			"scope": [
+				// Regex negative look-behind
+				"meta.assertion.negative-look-behind.regexp"
+			],
+			"settings": {
+				"foreground": "#e318ef",
+				"fontStyle": "underline"
 			}
 		},
 		{

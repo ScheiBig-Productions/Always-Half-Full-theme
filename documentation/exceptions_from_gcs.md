@@ -82,9 +82,10 @@ Regular expressions, which describe search query as Finite Automata. As Regex us
 - line anchors `^  $` are styled as `foreign syntax`, mainly to make it easier to differentiate contextual meaning of `^` character,
 - character classes like `\d`, class definition delimiters `[ ]` and wildcard `.` all get `type` styling, as they describe set with type of characters,
 - group delimiters `( )` are styled as functions, since they produce side-effect of remembering group match, just like impure functions/ procedures,
-- group back-references are styled as `field`, since they represent internal 'state' of expression match,
+- group back-references are styled as `field`, since they represent internal 'state' of expression match; labels of named groups are put into this style as well,
 - group capture specifiers:
   - non capturing operator `?:` is styled as `comment`, since it indicates that group matching result is not important,
-  - look-behind operator `?!` is styled as label, as just like label it allows to access existing entities,
+  - look-behind operator `?<=` is styled as label, as just like label it allows to access existing entities,
   - look-ahead operator `?=` is styled as `metadata`, since it allows to mention not yet existing entities, just like macro,
+  - _negative_ operators (`?!` and `?<!`) are underlined
 - all quantity specifiers are styled as numbers.
