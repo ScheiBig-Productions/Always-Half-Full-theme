@@ -1,5 +1,5 @@
 # ![logo icon small](img/icon/icon_sm.png) Always Half-Full theme
-A vibrant-colored theme that makes you feel like the glass is always half-full.
+A vibrant-colored VSCode theme that makes you feel like the glass is always half-full.
 
 ### Reasoning 
 Main mission of this theme pack, is to provide themes, that feel the same, independent of the variant. The color palette was crafted in such a way, that same parts of text, use (almost) always same style and (always) same color. Shades of selected colors were picked using CieLAB space, ensuring that text always has similar amount of contrast and most importantly, that no colors need to be sacrificed to keep readability on light background.
