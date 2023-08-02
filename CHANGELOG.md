@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [0.8.2] - 2023-08-02
+
+Remove showcase animations from production package.
+
 ## [0.8.1] - 2023-08-02
 
 Fix critical bug in theme json file, lower VSCode version requirements.
