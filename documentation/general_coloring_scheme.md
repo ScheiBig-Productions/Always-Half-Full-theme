@@ -28,7 +28,7 @@ These colors are used to symbolize 'action' - anything that actively changes the
 
 #### ![keyword](/img/headers/keyword.png)
 ##### Yellow color is used to indicate keywords - instructions of language that steer its flow.
-'Keyword' can be thought as umbrella term - it includes keywords that control flow of programs (loops, conditionals), one that declare entities (functions, raw types, custom type definitions), one that change storage (visibility modifiers, inheritance instructions), word-like operators, and more. Almost every word that is reserved by language, will use this style. If possible, 
+'Keyword' can be thought as umbrella term - it includes keywords that control flow of programs (loops, conditionals), one that declare entities (functions, raw types, custom type definitions), one that change storage (visibility modifiers, inheritance instructions), word-like operators, and more. Almost every word that is reserved by language, will use this style. Additionally, if possible in languages that don't group symbols as `punctuation`, line terminators (usually `;`) and block beginner symbols (for now, only `:` in Python) use this style as well, as it helps with finding 'semicolon-missing bugs'.
 
 #### ![foreign syntax](/img/headers/foreign%20syntax.png)
 ##### Golden color is used to indicate highly sugarcoated functionality.

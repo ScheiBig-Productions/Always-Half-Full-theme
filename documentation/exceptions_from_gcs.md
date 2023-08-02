@@ -5,9 +5,9 @@ Languages present in this list are styled in way, that differs from [general col
 
 ## Syntax-modest languages (usually scripting or configuration)
 Languages that provide very limited syntax, or one that purely depends on operator/spacing context (or any other) without actual semantics, try to use styling to provide as much different coloring, as possible, while trying to maintain their general meaning with used style. Those include (but probably are not limited to):
-- gitignore
-- CMake
-- git-commit
+- gitignore,
+- CMake,
+- git-commit.
 
 ## Markup languages derived from XML
 Implementation of such languages began with JSX syntax (in React files), since it was closest relative to **general coloring scheme**, allowing to derive styles from in-code usages. Basic syntax of such code is:
@@ -45,11 +45,28 @@ mechatroner.rainbow-csv` - to live up to its name, styling of its tokens was cho
 - all text in CSV files is bolded, to maximize readability,
 - even-numbered columns (counting from 1 obviously) are italicized, to add little bit of more readability (just like in many table styles, every even row has slightly different background).
 
-
 ## Markup document languages
 
 #### Markdown
-> TODO
+Markdown is simple markup language, that uses symbol operators and spacing (rather than XML-based tag system), to render simple HTML documents. As such syntax recognizes different 'tag types' as different tokens, more coloring can be used to make reading such document simpler. 
+
+Decided color choices are:
+- headings are styled as `type` (with bold font, like in resulting document) - it mimics INI section titles or YAML tag handles,
+- list bullets / indices as styled as `field`, to indicate them being items of container list,
+- URLs that are clickable (via [Ctrl] + [Click]) persist general URL style, different parts of link are however styled that:
+  - text URL caption use `label` style, as they provide meaningful name for link target,
+  - image URL alt text use `metadata` style, as it provides generally hidden information,
+  - URL title (which is visible as tooltip) preserve `string` style, just like values of title attribute in HTML,
+- code block delimiters (single and triple `` ` ``) use `documentation` style, which persists color, that is used for code blocks decorations in documents,
+  - fenced code block language uses `comment` style, but is bolded to differentiate it from rest of text or normal comments
+- footnote indices use `label` style just like URLs, but additionally they are underlined like URL links (and like rendered reference link),
+  - footnote explanations use `documentation` style,
+- blockquotes use `parameter` style, because they reference text passed from outer context,
+- separators (like `---` in own line) use `metadata` style - it mimics YAML document breaks.
+
+Text that uses emphasis (bold and italics) using `*` or `_`, or strike-through, has expected decorations applied. There is however limitation of markdown, as it does not provide operator for underlined text (or sub-/superscripts, however them being fairly common, they are not possible in theming API, so it's beyond scope) - this means that text underlined via HTML `<u>` tag cannot be decorated in code.
+
+It must also be noted, that markdown syntax extension does not tokenize tables, as those are part of extended syntax. It is technically possible to tokenize them using fairly long regex, but extending textmate rules is beyond scope of this extension.
 
 <!-- #### LaTeX
 > TODO -->

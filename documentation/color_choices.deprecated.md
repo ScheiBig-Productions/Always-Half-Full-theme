@@ -76,3 +76,4 @@ This color represents numerical literals.
 <h4 class="bei">Beige:</h4>
 It is a raw information, that describes other data and functionalities.
 This color is primarily used by inline documentation, usually denoted as special comment or dangling string.
+deprecated

@@ -1042,7 +1042,9 @@
 				"entity.name.tag.namespace",
 				"entity.other.attribute-name.namespace",
 				"entity.name.scope-resolution",
-				"entity.name.scope-resolution.namespace.using"
+				"entity.name.scope-resolution.namespace.using",
+				// Markdown `< >` used as link delimiters
+				"meta.link.email.lt-gt.markdown"
 			],
 			"settings": {
 				"foreground": "#9e9e9e",
@@ -1063,16 +1065,39 @@
 		},
 		{
 			"scope": [
+				// Markdown code block language name
+				"fenced_code.block.language.markdown"
+			],
+			"settings": {
+				"foreground": "#6a6a6a",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [
 				// In-code documentation
 				"comment.block.documentation",
 				"comment.block.documentation punctuation.definition.comment",
 				"string.quoted.docstring",
 				"string.quoted.docstring punctuation.definition.string",
 				"comment.block.javadoc",
-				"comment.block.javadoc punctuation.definition.comment"
+				"comment.block.javadoc punctuation.definition.comment",
 			],
 			"settings": {
 				"foreground": "#6b795a"
+			}
+		},
+		{
+			"scope": [
+				// Markdown code block delimiters
+				"markup.fenced_code.block.markdown punctuation.definition.markdown",
+				"punctuation.definition.raw.markdown",
+				// Markdown footnote text
+				"meta.link.reference.def.markdown markup.underline.link.markdown"
+			],
+			"settings": {
+				"foreground": "#6b795a",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -1291,6 +1316,19 @@
 		},
 		{
 			"scope": [
+				// Markdown headings
+				"markup.heading.markdown",
+				"punctuation.definition.heading.markdown",
+				"markup.heading.setext.1.markdown",
+				"markup.heading.setext.2.markdown"
+			],
+			"settings": {
+				"foreground": "#5b96d7",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [
 				// Pure data-representation objects
 				"entity.name.type.record",
 				"entity.name.type.struct"
@@ -1403,7 +1441,9 @@
 				"keyword.other.back-reference.regexp",
 				"punctuation.definition.group.regexp variable.other.regexp",
 				// Makefile variables
-				"variable.other.makefile"
+				"variable.other.makefile",
+				// Markdown list elements
+				"punctuation.definition.list.begin.markdown"
 			],
 			"settings": {
 				"foreground": "#9a60b3",
@@ -1460,7 +1500,11 @@
 				"meta.tag.preprocessor entity.name.tag",
 				"meta.tag.preprocessor.xml punctuation.definition.tag.xml",
 				// Regex look-ahead
-				"meta.assertion.look-ahead.regexp"
+				"meta.assertion.look-ahead.regexp",
+				// Markdown image alt text
+				"string.other.link.description.markdown",
+				// Markdown separators
+				"meta.separator.markdown"
 			],
 			"settings": {
 				"foreground": "#ce3f7a"
@@ -1506,7 +1550,10 @@
 				"punctuation.definition.anchor.yaml", // `&` prefix
 				// - usage
 				"variable.other.alias.yaml",
-				"punctuation.definition.alias.yaml"
+				"punctuation.definition.alias.yaml",
+				// Markdown quotes
+				"markup.quote.markdown",
+				"punctuation.definition.quote.begin.markdown"
 			],
 			"settings": {
 				"foreground": "#aa8791"
@@ -1544,16 +1591,22 @@
 				// Java generic wildcard
 				"storage.type.generic.wildcard.java",
 				// Regex look-behind
-				"meta.assertion.look-behind.regexp"
+				"meta.assertion.look-behind.regexp",
+				// Markdown link labels
+				"string.other.link.title.markdown"
 			],
 			"settings": {
-				"foreground": "#b450ab"
+				"foreground": "#b450ab",
+				"fontStyle": ""
 			}
 		},
 		{
 			"scope": [
 				// Regex negative look-behind
-				"meta.assertion.negative-look-behind.regexp"
+				"meta.assertion.negative-look-behind.regexp",
+				// Markdown footnote number
+				"meta.link.reference.markdown string.other.link.title.markdown",
+				"constant.other.reference.link.markdown"
 			],
 			"settings": {
 				"foreground": "#b450ab",
@@ -1566,7 +1619,7 @@
 				"meta.attribute.id string",
 				// CSS id's
 				"entity.other.attribute-name.id",
-				"entity.other.attribute-name.id punctuation.definition" // `#` prefix
+				"entity.other.attribute-name.id punctuation.definition", // `#` prefix
 			],
 			"settings": {
 				"foreground": "#b450ab",
@@ -1587,10 +1640,41 @@
 		{
 			"scope": [
 				// Python constant fields
-				"constant.other.caps.python"
+				"constant.other.caps.python",
+				// Markdown bold text
+				"markup.bold.markdown",
 			],
 			"settings": {
 				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [
+				// Markdown italic text
+				"markup.italic.markdown"
+			],
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [
+				// Markdown italic & bold text
+				"markup.italic.markdown markup.bold.markdown"
+			],
+			"settings": {
+				"fontStyle": "italic bold"
+			}
+		},
+		{
+			"scope": [
+				// Markdown urls
+				"markup.underline.link.image.markdown",
+				"markup.underline.link.markdown"
+			],
+			"settings": {
+				"foreground": "#5192fb",
+				"fontStyle": "underline"
 			}
 		},
 		// :: == == ==

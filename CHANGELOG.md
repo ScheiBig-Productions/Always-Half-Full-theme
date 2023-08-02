@@ -11,29 +11,30 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 Initial release of extension. Will be bumped to [0.9.0] once all [build-in extension syntaxes](https://github.com/microsoft/vscode/tree/9a281018181dca942cc46c03f9795be00912e38d/extensions) are supported (that are on list of planned ones), and to [1.0.0] once all [currently planned](https://github.com/search?q=repo%3AScheiBig-Production%2FAlways-Half-Full-theme+created%3A%3C2023-08-02+author%3AScheiBig+author%3ANuttyJelly+state%3Aopen&type=Issues&ref=advsearch&l=&l=&p=3) are.
 
 ### Added:
-- __Core UI__ - theming for all window surfaces 
-- Extension documentation
+- __Core UI__ - theming for all window surfaces,
+- Extension documentation (available in repository).
 
 ### Added support for languages / syntaxes:
-- *.component.html (Angular)
-- C
-- C++
-- C#
-- CMake 
-- CSS
-- CSV
-- gitignore & git-commit
-- HTML
-- INI
-- Java
-- JavaScript
-- JSON
-- JSX (React)
-- POM (Maven)
-- Python
-- Regex
-- SAS 4GL
-- TypeScript
-- XML
-- YAML
+- *.component.html (Angular),
+- C,
+- C++,
+- C#,
+- CMake ,
+- CSS,
+- CSV,
+- gitignore & git-commit,
+- HTML,
+- INI,
+- Java,
+- JavaScript,
+- JSON,
+- JSX (React),
+- Markdown (basic, core syntax of GitHub flavor - math extensions are planned with LaTeX support, Mermaid syntax support is planned independently as well),
+- POM (Maven),
+- Python,
+- Regex,
+- SAS 4GL,
+- TypeScript,
+- XML,
+- YAML.
 

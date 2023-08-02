@@ -16,10 +16,10 @@ __Always Half-Full__ comes with 4 themes, each suitable for different circumstan
 
 ### Showcase
 
-![File list / Welcome screen / settings / console](img/animations/1.gif)
-![File list / Java code / Keybindings table](img/animations/2.gif)
-![Project search / JSX code / CSS code](img/animations/3.gif)
-![Jupyter notebook with Python kernel / C++ code](img/animations/4.gif)
+![Welcome screen / settings / console](img/animations/1.gif "Welcome screen / settings / console")
+![File list / Java code / Keybindings table](img/animations/2.gif "File list / Java code / Keybindings table")
+![Project search / JSX code / CSS code](img/animations/3.gif "Project search / JSX code / CSS code")
+![Jupyter notebook with Python kernel / C++ code](img/animations/4.gif "Jupyter notebook with Python kernel / C++ code")
 
 ###### If you want to see smooth animations, or images above didn't load, you can see original animation [here](https://scheibig-production.github.io/Always-Half-Full-theme/).
 

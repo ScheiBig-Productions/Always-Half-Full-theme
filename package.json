@@ -3,12 +3,13 @@
     "displayName": "Always Half-Full",
     "description": "A happy, colorful theme",
     "author": {
-        "name": "ScheiBig"
+        "name": "ScheiBig (Marcin Jeznach)"
     },
     "publisher": "ScheiBig",
     "version": "0.9.0",
     "repository": {
-        "url": "https://github.com/NuttyJelly/Always-Half-Full-theme"
+        "url": "https://github.com/ScheiBig-Production/Always-Half-Full-theme",
+        "type": "git"
     },
     "license": "MIT",
     "icon": "img/icon/icon.png",
