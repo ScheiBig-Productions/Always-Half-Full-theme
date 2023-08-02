@@ -16,13 +16,12 @@ __Always Half-Full__ comes with 4 themes, each suitable for different circumstan
 
 ### Showcase
 
-https://github.com/ScheiBig-Production/Always-Half-Full-theme/assets/11073543/034aff49-b0cb-477f-b639-6477a8f23607
+![File list / Welcome screen / settings / console](img/animations/1.gif)
+![File list / Java code / Keybindings table](img/animations/2.gif)
+![Project search / JSX code / CSS code](img/animations/3.gif)
+![Jupyter notebook with Python kernel / C++ code](img/animations/4.gif)
 
-https://github.com/ScheiBig-Production/Always-Half-Full-theme/assets/11073543/b4bf668f-2899-4bcd-8bcd-c2bdda2828aa
-
-https://github.com/ScheiBig-Production/Always-Half-Full-theme/assets/11073543/b96acdf8-08c0-466c-99db-0168b5547a0a
-
-https://github.com/ScheiBig-Production/Always-Half-Full-theme/assets/11073543/42f473df-e5f3-45fa-bd1e-7378b3fceeec
+###### If you want to see smooth animations, or images above didn't load, you can see original animation [here](https://scheibig-production.github.io/Always-Half-Full-theme/).
 
 List of officially supported languages, as well as one that are planned is [available here](https://github.com/orgs/ScheiBig-Production/projects/1/views/1?sortedBy%5Bdirection%5D=desc&sortedBy%5BcolumnId%5D=Status). Keep in mind that in early stages of development, language priority badge was ignored, in favor of those, that are actually used by author.
 
