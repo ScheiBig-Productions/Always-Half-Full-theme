@@ -4,7 +4,15 @@ All notable changes to the "always--half-full" extension will be documented in t
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## [0.8.3] - 2023-08-08
+
+Minor tweaks in semi-transparent colors, including:
+- whitespace markers,
+- diff-editor backgrounds,
+- find-and-replace backgrounds,
+- menus and other hovering surfaces.
+
+Also added border to current line in dark variants for consistency.
 
 ## [0.8.2] - 2023-08-02
 
@@ -46,3 +54,4 @@ Initial release of extension. Will be bumped to [0.9.0] once all [build-in exten
 - XML,
 - YAML.
 
+## [Unreleased]

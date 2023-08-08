@@ -115,7 +115,7 @@
 
 
 
-		"listFilterWidget.background": "#fcf0e9e2",
+		"listFilterWidget.background": "#fcf0e9ee",
 
 
 		"listFilterWidget.shadow": "#00000066",
@@ -366,10 +366,10 @@
 		// || Editor widget colors
 		// :: ==
 		"editorWidget.foreground": "#000000e2",
-		"editorWidget.background": "#fcf0e9e2",
+		"editorWidget.background": "#fcf0e9ee",
 		"editorWidget.border": "#a4a4a4",
 		"editorWidget.resizeBorder": "#848484",
-		"editorSuggestWidget.background": "#fcf0e9e2",
+		"editorSuggestWidget.background": "#fcf0e9ee",
 		"editorSuggestWidget.border": "#a4a4a4",
 		"editorSuggestWidget.foreground": "#000000e2",
 
@@ -382,7 +382,7 @@
 		"editorHoverWidget.background": "#fff4ece2",
 		"editorHoverWidget.border": "#a4a4a4",
 
-		"editorHoverWidget.statusBarBackground": "#fcf0e9e2",
+		"editorHoverWidget.statusBarBackground": "#fcf0e9ee",
 
 
 		"editorGhostText.foreground": "#0000007f",
@@ -496,7 +496,7 @@
 
 
 		"menu.foreground": "#000000e2",
-		"menu.background": "#fcf0e9e2",
+		"menu.background": "#fcf0e9ee",
 		"menu.selectionForeground": "#000000e2",
 
 
@@ -554,7 +554,7 @@
 		// :: ==
 		"pickerGroup.border": "#a4a4a4",
 
-		"quickInput.background": "#fcf0e9e2",
+		"quickInput.background": "#fcf0e9ee",
 		"quickInput.foreground": "#000000e2",
 
 		"quickInputList.focusForeground": "#000000e2",
