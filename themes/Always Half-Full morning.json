@@ -392,7 +392,7 @@
 		"editorLineNumber.foreground": "#0000007f",
 		"editorLineNumber.activeForeground": "#046dc7",
 		"editorLineNumber.dimmedForeground": "#0000007f",
-		"editorCursor.background": "#1b1b1b",
+		"editorCursor.background": "#f2f2f2",
 		"editorCursor.foreground": "#111111da",
 		//
 		"editor.selectionBackground": "#5b96d733",
@@ -781,7 +781,7 @@
 		"terminalCommandDecoration.defaultBackground": "#848484",
 		"terminalCommandDecoration.successBackground": "#3e8640",
 		"terminalCommandDecoration.errorBackground": "#d20325",
-		"terminalOverviewRuler.cursorForeground": "#ffffffda",
+		"terminalOverviewRuler.cursorForeground": "#111111da",
 		"terminalOverviewRuler.findMatchForeground": "#9a60b3",
 		// :: == == ==
 		// || Debug colors

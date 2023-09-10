@@ -2,6 +2,10 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.8.4] - 2023-09-10
+
+Minor bug fixes related to cursors in editor and terminal.
+
 ## [0.8.3] - 2023-08-08
 
 Minor tweaks in semi-transparent colors, including:
