@@ -2,6 +2,17 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.8.6] = 2023.09.11
+
+Add "support" for MSSQL / T-SQL / PL-SQL. Actual theming is extremely limited, due to little to no grammar / semantics for:
+- variables,
+- database names,
+- table names,
+- column / `as` alias names,
+- stored procedures names,
+
+even in situations, that could be clearly resolved from basic context of syntax.
+
 ## [0.8.5] - 2023.09.11
 
 Fix Pythons value-keyword (`None`, `True`, etc.) coloring (to `keyword` from `variable.constant`).

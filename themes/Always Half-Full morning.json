@@ -1018,6 +1018,16 @@
 		},
 		{
 			"scope": [
+				// Variables in T-SQL
+				"source.sql text.variable"
+			],
+			"settings": {
+				"foreground": "#1b1b1b",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [
 				// Basic operators
 				"keyword.operator",
 				"entity.name.operator",
@@ -1043,6 +1053,7 @@
 				"entity.other.attribute-name.namespace",
 				"entity.name.scope-resolution",
 				"entity.name.scope-resolution.namespace.using",
+				// "constant.other.database-name.sql", // Database as namespace
 				// Markdown `< >` used as link delimiters
 				"meta.link.email.lt-gt.markdown"
 			],
@@ -1294,6 +1305,7 @@
 			"scope": [
 				// All custom types
 				"entity.name.type",
+				// "constant.other.table-name.sql", // Table as class model
 				// Fixes highlighting of non-primitive types in Java (`storage*` is used primitive)
 				"storage.type.java",
 				// Type tags in YAML
@@ -1800,6 +1812,7 @@
 		"xmlDocCommentText": "#618041",
 		"keyword": { "foreground": "#959510", "fontStyle": "bold" },
 		"builtinConstant": { "foreground": "#959510", "fontStyle": "bold" },
+		"variable.readonly.builtin:python": { "foreground": "#959510", "fontStyle": "bold" },
 		"newOperator": "#959510",
 		"function": {
 			"foreground": "#db5900",

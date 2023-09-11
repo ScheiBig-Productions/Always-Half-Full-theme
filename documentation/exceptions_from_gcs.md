@@ -90,6 +90,23 @@ SAS 4GL is DSL, that is made for performing data manipulations, statistics and r
 - macro keywords are arbitrarily styled as `labels`, to make them stand out from different macro tokens,
 - block comments persist their styling, unfortunately this includes expression comments, that could use different token to make them stand out, as they cannot be embedded in other expressions. Additionally, macro-comments are italicized to make them stand out from other comments, as they are not inserted into final code (won't appear in log as well).
 
+#### T-SQL and PLSQL
+As relative databases could be imagined as models for data in object-oriented data, perfect tokenization contract could be achieved as:
+> `database`.`table`.`column`
+
+being equal in meaning to
+> `namespace/module`.`class`.`property`
+
+and in perfect world, this would be reflected in theme. Unfortunately both SQL-lang flavors lack any support for tokenization of column names, furthermore:
+- MSSQL / T-SQL grammar recognizes any construct `a.b` as `a` being database name and `b` being table name, even if:
+  - context suggests that either `b` is name of stored procedure (ie. in `exec` block),
+  - or that `a` is table name and `b` is column name (`select` blocks, `on` contract in `join`)
+  
+  that being said, database / table name by itself isn't even recognized as token that is provided by grammar; basic support is provided for variables (treating procedure parameters as such too),
+- PLSQL does not recognize any type of entity as separate token (procedures, databases, tables, columns, variables).
+
+This contributes to theming of SQL-like languages being extremely limited.
+
 ## Abstract description languages
 These are syntaxes that are often used as utilities in other languages, used to describe patterns, diagrams, graphs, etc.
 
