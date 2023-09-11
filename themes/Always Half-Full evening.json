@@ -1799,6 +1799,7 @@
 		"xmlDocCommentDelimiter": "#6b795a",
 		"xmlDocCommentText": "#6b795a",
 		"keyword": "#a58f14",
+		"builtinConstant": "#a58f14",
 		"newOperator": "#a58f14",
 		"function": {
 			"foreground": "#bf6e3f",

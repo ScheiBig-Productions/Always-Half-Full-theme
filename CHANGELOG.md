@@ -2,6 +2,10 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.8.5] - 2023.09.11
+
+Fix Pythons value-keyword (`None`, `True`, etc.) coloring (to `keyword` from `variable.constant`).
+
 ## [0.8.4] - 2023-09-10
 
 Minor bug fixes related to cursors in editor and terminal.
