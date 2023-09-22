@@ -431,7 +431,7 @@
 		"editor.rangeHighlightBorder": "#0000",
 		"editor.symbolHighlightBackground": "#6b795a33",
 		"editor.symbolHighlightBorder": "#6b795a",
-		"editorWhitespace.foreground": "#84848488",
+		"editorWhitespace.foreground": "#84848455",
 		"editorIndentGuide.background": "#11111144",
 		"editorIndentGuide.activeBackground": "#0000007f",
 		//
@@ -1204,7 +1204,9 @@
 		{
 			"scope": [
 				// XML-like language tag name
-				"entity.name.tag"
+				"entity.name.tag",
+				// Zig @-buildIns
+				"support.function.builtin.zig"
 			],
 			"settings": {
 				"foreground": "#886419",

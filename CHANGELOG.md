@@ -2,7 +2,31 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
-## [0.8.6] = 2023.09.11
+## [0.8.7] - 2023.09.22
+
+Add support for Zig programming language. Currently supported are:
+- functions (single token / no modifiers),
+- fields (mo modifiers)
+- most of types and complex type types (😵‍💫),
+- `comptime` type parameters (treated as generics),
+- namespace types,
+- build-in function utilities (colored as special functions),
+- arithmetic operators (mainly),
+- literals.
+
+Unfortunately, LSP lacks:
+- parameters,
+- most of punctuation and braces, including:
+  - at least half of operators,
+  - type specifier colons, semicolons, argument / field commas and member access dots,
+  - optional type specifier (`?`) and pointer / optional dereference,
+  - all brace types: `() {} []`,
+  - size / counter specifiers,
+-  optionally, modifiers for `self` parameter and local constants.
+
+Additionally, further toned-down whitespace markers opacity.
+
+## [0.8.6] - 2023.09.11
 
 Add "support" for MSSQL / T-SQL / PL-SQL. Actual theming is extremely limited, due to little to no grammar / semantics for:
 - variables,
