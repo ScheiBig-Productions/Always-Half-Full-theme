@@ -197,6 +197,7 @@
 		"terminal.background": "#141414",
 		"terminal.border": "#484c4e",
 		"terminalCursor.background": "#141414",
+		"editorCursor.foreground": "#ffffff99",
 		// :: == == ==
 		// || Debug colors
 		// :: ==

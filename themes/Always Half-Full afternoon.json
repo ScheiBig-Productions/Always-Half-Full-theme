@@ -609,7 +609,7 @@
 		"terminalCommandDecoration.defaultBackground": "#848484",
 
 
-		"terminalOverviewRuler.cursorForeground": "#ffffffda",
+		"terminalOverviewRuler.cursorForeground": "#111111da",
 
 		// :: == == ==
 		// || Debug colors

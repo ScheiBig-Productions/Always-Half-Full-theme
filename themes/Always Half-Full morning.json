@@ -389,9 +389,9 @@
 		// :: ==
 		"editor.background": "#eeeeee",
 		"editor.foreground": "#1b1b1b",
-		"editorLineNumber.foreground": "#0000007f",
+		"editorLineNumber.foreground": "#00000058",
 		"editorLineNumber.activeForeground": "#046dc7",
-		"editorLineNumber.dimmedForeground": "#0000007f",
+		"editorLineNumber.dimmedForeground": "#00000044",
 		"editorCursor.background": "#f2f2f2",
 		"editorCursor.foreground": "#111111da",
 		//
@@ -441,7 +441,7 @@
 		"editorInlayHint.typeBackground": "#ffffff88",
 		"editorInlayHint.parameterForeground": "#aa8791",
 		"editorInlayHint.parameterBackground": "#ffffff88",
-		"editorRuler.foreground": "#ffffff33",
+		"editorRuler.foreground": "#00000033",
 		"editor.linkedEditingBackground": "#bf6e3f44",
 		//
 		"editorCodeLens.foreground": "#6b795a",

@@ -2,6 +2,10 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.8.8] - 2024.01.15
+
+Various fixes and tweaks of colors
+
 ## [0.8.7] - 2023.09.22
 
 Add support for Zig programming language. Currently supported are:

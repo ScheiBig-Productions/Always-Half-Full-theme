@@ -389,11 +389,11 @@
 		// :: ==
 		"editor.background": "#1a1c1d",
 		"editor.foreground": "#c6c6c6",
-		"editorLineNumber.foreground": "#ffffff6a",
+		"editorLineNumber.foreground": "#ffffff44",
 		"editorLineNumber.activeForeground": "#5192fb",
-		"editorLineNumber.dimmedForeground": "#ffffff6a",
+		"editorLineNumber.dimmedForeground": "#ffffff33",
 		"editorCursor.background": "#1b1b1b",
-		"editorCursor.foreground": "#ffffffda",
+		"editorCursor.foreground": "#ffffffba",
 		//
 		"editor.selectionBackground": "#5b96d733",
 		"editor.selectionForeground": "#ffffff",
