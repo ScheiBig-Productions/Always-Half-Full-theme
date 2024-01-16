@@ -1149,6 +1149,7 @@
 				"support.type.primitive",
 				"support.type.builtin",
 				"variable.language.this",
+				"variable.language.super",
 				"storage",
 				// CSS pseudo-elements and media primitives 
 				"entity.other.attribute-name.pseudo-element",
@@ -1439,7 +1440,7 @@
 			"scope": [
 				// Fields inside types
 				"variable.object.property",
-				"variable.other.object.property.java",
+				"variable.other.object.property",
 				"variable.other.property",
 				"variable.other.constant.property",
 				// YAML tag fields

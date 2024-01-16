@@ -2,9 +2,13 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.8.9] - 2024.01.16
+
+Token fixes for JavaScript.
+
 ## [0.8.8] - 2024.01.15
 
-Various fixes and tweaks of colors
+Various fixes and tweaks of colors.
 
 ## [0.8.7] - 2023.09.22
 
