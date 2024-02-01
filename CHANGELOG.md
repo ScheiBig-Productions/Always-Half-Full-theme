@@ -2,6 +2,26 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.8.10] - 2024.02.01
+
+**Introducing** starlight theme:
+"a fork of midnight variant, with muted colors and lowered contrast - for when it's closer to sunrise than sunset, but you are just few keystrokes away from finishing that project".
+
+New theme intentionally deviates from contrast-constant palette, by lowering both saturation and brightness of colors, to ensure minimal eyestrain in pitch-black environments.
+
+Add support for go (lang) programming language.
+Just like with Zig, provided token list is very poor, consisting of:
+- keywords,
+- functions (methods only recognized on declaration),
+- custom types (all treated the same) and build-in types,
+-  build-in function utilities (colored as special functions),
+-  function parameters (but not method receivers),
+- variables / constants (this includes fields),
+- operators,
+- literals.
+
+This means, that go official extension ignores fields, methods, channels and type types (interface / struct /typedef) from LSP (gopls provides those), and you might say that it could also provide receiver parameters, and map keys with ease (also, `true` / `false` / `iota` are threated as normal constants / not build-ins, and error as custom type not build-in).
+
 ## [0.8.9] - 2024.01.16
 
 Token fixes for JavaScript.

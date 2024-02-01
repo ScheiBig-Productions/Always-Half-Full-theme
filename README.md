@@ -13,6 +13,7 @@ __Always Half-Full__ comes with 4 themes, each suitable for different circumstan
 - 🌇 '_**afternoon**_' variant - a light theme, that caters towards people spending long sessions on coding, while still present at corporate environments. To address eyestrain, and lower blue-light exposure, this theme provides warmer, sandstone background colors on all surfaces.
 - 🌆 '_**evening**_' variant - this theme is what the hype is nowadays. This is modern, dark theme with anthracite and dark-graphite surfaces, that allow to work with code tirelessly.
 - 🌃 '_**midnight**_' variant - a minimal illumination dark theme. This variant uses coal blacks as base, allowing for colors to pop even more, while emitting as little light as possible, but as much as necessary, to accompany long nights with high concentration.
+- 🌌'_**starlight**_ variant (**NEW**) - a fork of midnight variant, with muted colors and lowered contrast - for when it's closer to sunrise than sunset, but you are just few keystrokes away from finishing that project.
 
 ### Showcase
 

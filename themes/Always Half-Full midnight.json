@@ -106,6 +106,7 @@
 		// || Editor colors
 		// :: ==
 		"editor.background": "#111111",
+		"editorCursor.foreground": "#ffffff99",
 		"searchEditor.textInputBorder": "#2b2b2b",
 		"editor.lineHighlightBackground": "#181818",
 		"editorInlayHint.background": "#2b2b2b88",
@@ -197,7 +198,6 @@
 		"terminal.background": "#141414",
 		"terminal.border": "#484c4e",
 		"terminalCursor.background": "#141414",
-		"editorCursor.foreground": "#ffffff99",
 		// :: == == ==
 		// || Debug colors
 		// :: ==

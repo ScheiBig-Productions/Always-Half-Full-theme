@@ -6,7 +6,7 @@
         "name": "ScheiBig (Marcin Jeznach)"
     },
     "publisher": "ScheiBig",
-    "version": "0.8.9",
+    "version": "0.8.10",
     "repository": {
         "url": "https://github.com/ScheiBig-Production/Always-Half-Full-theme",
         "type": "git"
@@ -40,6 +40,11 @@
                 "label": "Always Half-Full 🌃 midnight",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Always Half-Full midnight.json"
+            },
+            {
+                "label": "Always Half-Full 🌌 starlight",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Always Half-Full starlight.json"
             }
         ]
     }

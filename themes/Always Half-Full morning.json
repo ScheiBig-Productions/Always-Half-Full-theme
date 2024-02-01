@@ -1055,7 +1055,11 @@
 				"entity.name.scope-resolution.namespace.using",
 				// "constant.other.database-name.sql", // Database as namespace
 				// Markdown `< >` used as link delimiters
-				"meta.link.email.lt-gt.markdown"
+				"meta.link.email.lt-gt.markdown",
+				// go
+				"punctuation.other.colon.go",
+				"punctuation.other.period.go",
+				"punctuation.other.comma.go",
 			],
 			"settings": {
 				"foreground": "#525252",
@@ -1207,7 +1211,9 @@
 				// XML-like language tag name
 				"entity.name.tag",
 				// Zig @-buildIns
-				"support.function.builtin.zig"
+				"support.function.builtin.zig",
+				// go build-ins
+				"support.function.builtin.go",
 			],
 			"settings": {
 				"foreground": "#886419",
@@ -1817,6 +1823,14 @@
 		"builtinConstant": { "foreground": "#959510", "fontStyle": "bold" },
 		"variable.readonly.builtin:python": { "foreground": "#959510", "fontStyle": "bold" },
 		"newOperator": "#959510",
+		"type.defaultLibrary:go": {
+			"foreground": "#959510",
+			"fontStyle": "bold"
+		},
+		"variable.defaultLibrary:go": {
+			"foreground": "#959510",
+			"fontStyle": "bold"
+		},
 		"function": {
 			"foreground": "#db5900",
 			"fontStyle": "italic",
@@ -1847,6 +1861,10 @@
 		},
 		"event": "#886419",
 		"xmlDocCommentName": "#886419",
+		"function.defaultLibrary:go": {
+			"foreground": "#886419",
+			"fontStyle": "bold"
+		},
 		"string": {
 			"foreground": "#0b939e",
 			"fontStyle": "bold"
