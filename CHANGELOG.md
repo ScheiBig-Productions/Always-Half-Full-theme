@@ -2,6 +2,10 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.8.11] - 2024.04.20
+
+Fixed whitespace markers in *afternoon*.
+
 ## [0.8.10] - 2024.02.01
 
 **Introducing** starlight theme:

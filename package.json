@@ -12,6 +12,7 @@
         "type": "git"
     },
     "license": "MIT",
+    "private": true,
     "icon": "img/icon/icon.png",
     "engines": {
         "vscode": "^1.74.0"
