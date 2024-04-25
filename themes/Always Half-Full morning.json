@@ -1175,6 +1175,9 @@
 				// Regex set operators
 				"keyword.operator.or.regexp",
 				"keyword.operator.negation.regexp",
+				// Python logical operators (they are keywords per language specs
+				"keyword.operator.logical.python",
+				"keyword.operator.logical.python"
 			],
 			"settings": {
 				"foreground": "#959510",
@@ -1552,6 +1555,8 @@
 				"docstring.variable.identifier.sphinx.python",
 				"docstring.variable.begin.sphinx.python",
 				"docstring.variable.end.sphinx.python",
+				// Python dunder attributes (most pregenerated, most used as gate for reflection)
+				"support.variable.magic.python"
 			],
 			"settings": {
 				"foreground": "#fa4c94"
@@ -1839,7 +1844,10 @@
 			"foreground": "#1b1b1b",
 			"fontStyle": "bold underline"
 		},
-		"operator": "#525252",
+		"operator": {
+			"foreground": "#525252",
+			"fontStyle": ""
+		},
 		"operatorOverloaded": "#525252",
 		"magicFunction": { 
 			"foreground": "#525252", 
@@ -1852,15 +1860,9 @@
 		"keyword": { "foreground": "#959510", "fontStyle": "bold" },
 		"builtinConstant": {"foreground": "#959510","fontStyle": "bold"},
 		"variable.readonly.builtin:python": { "foreground": "#959510", "fontStyle": "bold" },
-		"newOperator": "#959510",
-		"type.defaultLibrary:go": {
-			"foreground": "#959510",
-			"fontStyle": "bold"
-		},
-		"variable.defaultLibrary:go": {
-			"foreground": "#959510",
-			"fontStyle": "bold"
-		},
+		"newOperator": { "foreground": "#959510", "fontStyle": "bold" },
+		"type.defaultLibrary:go": { "foreground": "#959510", "fontStyle": "bold" },
+		"variable.defaultLibrary:go": { "foreground": "#959510", "fontStyle": "bold" },
 		"function": {
 			"foreground": "#db5900",
 			"fontStyle": "italic",
@@ -1986,6 +1988,7 @@
 		"decorator": "#fa4c94",
 		"function.decorator": "#fa4c94",
 		"class.decorator": "#fa4c94",
+		"variable.builtin:python": "#fa4c94",
 		"parameter": {
 			"foreground": "#b46f85",
 			"fontStyle": "bold"

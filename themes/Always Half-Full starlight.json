@@ -1179,6 +1179,9 @@
 				// Regex set operators
 				"keyword.operator.or.regexp",
 				"keyword.operator.negation.regexp",
+				// Python logical operators (they are keywords per language specs
+				"keyword.operator.logical.python",
+				"keyword.operator.logical.python"
 			],
 			"settings": {
 				"foreground": "#7e723a",
@@ -1556,6 +1559,8 @@
 				"docstring.variable.identifier.sphinx.python",
 				"docstring.variable.begin.sphinx.python",
 				"docstring.variable.end.sphinx.python",
+				// Python dunder attributes (most pregenerated, most used as gate for reflection)
+				"support.variable.magic.python"
 			],
 			"settings": {
 				"foreground": "#9b496b"
@@ -1843,7 +1848,10 @@
 			"foreground": "#8b8b8b",
 			"fontStyle": "bold underline"
 		},
-		"operator": "#777777",
+		"operator": {
+			"foreground": "#777777",
+			"fontStyle": ""
+		},
 		"operatorOverloaded": "#777777",
 		"magicFunction": {
 			"foreground": "#777777",
@@ -1853,18 +1861,12 @@
 		"comment": "#6a6a6a",
 		"xmlDocCommentDelimiter": "#646e5a",
 		"xmlDocCommentText": "#646e5a",
-		"keyword": "#7e723a",
-		"builtinConstant": "#7e723a",
-		"variable.readonly.builtin:python": "#7e723a",
-		"newOperator": "#7e723a",
-		"type.defaultLibrary:go": {
-			"foreground": "#7e723a",
-			"fontStyle": ""
-		},
-		"variable.defaultLibrary:go": {
-			"foreground": "#7e723a",
-			"fontStyle": ""
-		},
+		"keyword": { "foreground": "#7e723a", "fontStyle": "" },
+		"builtinConstant": { "foreground": "#7e723a", "fontStyle": "" },
+		"variable.readonly.builtin:python": { "foreground": "#a58f14", "fontStyle": "" },
+		"newOperator": { "foreground": "#7e723a", "fontStyle": "" },
+		"type.defaultLibrary:go": { "foreground": "#7e723a", "fontStyle": "" },
+		"variable.defaultLibrary:go": { "foreground": "#7e723a", "fontStyle": "" },
 		"function": {
 			"foreground": "#905f42",
 			"fontStyle": "italic",
@@ -1990,6 +1992,7 @@
 		"decorator": "#9b496b",
 		"function.decorator": "#9b496b",
 		"class.decorator": "#9b496b",
+		"variable.builtin:python": "#9b496b",
 		"parameter": {
 			"foreground": "#866b73",
 			"fontStyle": "bold"
@@ -2041,7 +2044,7 @@
 			"foreground": "#4374a7"
 		},
 		"warning": "#645a23",
-		"note":  "#245b8d"
+		"note": "#245b8d"
 	},
 	"semanticHighlighting": true
 }

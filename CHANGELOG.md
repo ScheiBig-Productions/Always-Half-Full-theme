@@ -2,6 +2,14 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.8.13] - 2024.04.25
+
+Fix inconsistencies introduced in previous patch and further revamp Python:
+- keyword operators (`in`, `is`, `and`, `or`) are now colored as keywords, not operators - before they were inconsistently colored as ether one depending on random factors (furthermore, Python specs considers them as keywords),
+- language-constants operators (`True`, `False`, `None`) are now formatted like keywords in dark themes (previously, they had light-themed bold text),
+- removed italics from operators that were overloaded using dunder methods,
+- added dunder attributes - they are colored as annotations/decorators/metadata, since most of them are auto-generated and/or are used for reflection.
+
 ## [0.8.12] - 2024.04.25
 
 Slight revamp of Python:

@@ -1178,6 +1178,9 @@
 				// Regex set operators
 				"keyword.operator.or.regexp",
 				"keyword.operator.negation.regexp",
+				// Python logical operators (they are keywords per language specs
+				"keyword.operator.logical.python",
+				"keyword.operator.logical.python"
 			],
 			"settings": {
 				"foreground": "#a58f14",
@@ -1555,6 +1558,8 @@
 				"docstring.variable.identifier.sphinx.python",
 				"docstring.variable.begin.sphinx.python",
 				"docstring.variable.end.sphinx.python",
+				// Python dunder attributes (most pregenerated, most used as gate for reflection)
+				"support.variable.magic.python"
 			],
 			"settings": {
 				"foreground": "#ce3f7a"
@@ -1842,7 +1847,10 @@
 			"foreground": "#b4b4b4",
 			"fontStyle": "bold underline"
 		},
-		"operator": "#9e9e9e",
+		"operator": {
+			"foreground": "#9e9e9e",
+			"fontStyle": ""
+		},
 		"operatorOverloaded": "#9e9e9e",
 		"magicFunction": {
 			"foreground": "#9e9e9e",
@@ -1852,18 +1860,12 @@
 		"comment": "#6a6a6a",
 		"xmlDocCommentDelimiter": "#6b795a",
 		"xmlDocCommentText": "#6b795a",
-		"keyword": "#a58f14",
-		"builtinConstant": "#a58f14",
-		"variable.readonly.builtin:python": "#a58f14",
-		"newOperator": "#a58f14",
-		"type.defaultLibrary:go": {
-			"foreground": "#a58f14",
-			"fontStyle": ""
-		},
-		"variable.defaultLibrary:go": {
-			"foreground": "#a58f14",
-			"fontStyle": ""
-		},
+		"keyword": { "foreground": "#a58f14", "fontStyle": "" },
+		"builtinConstant": { "foreground": "#a58f14", "fontStyle": "" },
+		"variable.readonly.builtin:python": { "foreground": "#a58f14", "fontStyle": "" },
+		"newOperator": { "foreground": "#a58f14", "fontStyle": "" },
+		"type.defaultLibrary:go": { "foreground": "#a58f14", "fontStyle": "" },
+		"variable.defaultLibrary:go": { "foreground": "#a58f14", "fontStyle": "" },
 		"function": {
 			"foreground": "#bf6e3f",
 			"fontStyle": "italic",
@@ -1989,6 +1991,7 @@
 		"decorator": "#ce3f7a",
 		"function.decorator": "#ce3f7a",
 		"class.decorator": "#ce3f7a",
+		"variable.builtin:python": "#ce3f7a",
 		"parameter": {
 			"foreground": "#aa8791",
 			"fontStyle": "bold"
