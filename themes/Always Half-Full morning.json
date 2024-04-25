@@ -1068,6 +1068,16 @@
 		},
 		{
 			"scope": [
+				// Python dunder methods
+				"support.function.magic.python",
+			],
+			"settings": {
+				"foreground": "#525252",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [
 				// Comments
 				"comment",
 				"punctuation.definition.comment",
@@ -1208,16 +1218,28 @@
 		},
 		{
 			"scope": [
+				// Python `self` parameter
+				"variable.parameter.function.language.special.self.python"
+			],
+			"settings": {
+				"foreground": "#886419",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [
 				// XML-like language tag name
 				"entity.name.tag",
 				// Zig @-buildIns
 				"support.function.builtin.zig",
 				// go build-ins
 				"support.function.builtin.go",
+				// Python build-ins
+				"support.function.builtin.python",
 			],
 			"settings": {
 				"foreground": "#886419",
-				"fontStyle": "bold"
+				"fontStyle": "italic bold"
 			}
 		},
 		{
@@ -1525,7 +1547,11 @@
 				// Markdown image alt text
 				"string.other.link.description.markdown",
 				// Markdown separators
-				"meta.separator.markdown"
+				"meta.separator.markdown",
+				// Python Sphinx doc tags
+				"docstring.variable.identifier.sphinx.python",
+				"docstring.variable.begin.sphinx.python",
+				"docstring.variable.end.sphinx.python",
 			],
 			"settings": {
 				"foreground": "#fa4c94"
@@ -1815,12 +1841,16 @@
 		},
 		"operator": "#525252",
 		"operatorOverloaded": "#525252",
+		"magicFunction": { 
+			"foreground": "#525252", 
+			"fontStyle": "italic" 
+		},	
 		"namespace": "#525252",
 		"comment": "#848484",
 		"xmlDocCommentDelimiter": "#618041",
 		"xmlDocCommentText": "#618041",
 		"keyword": { "foreground": "#959510", "fontStyle": "bold" },
-		"builtinConstant": { "foreground": "#959510", "fontStyle": "bold" },
+		"builtinConstant": {"foreground": "#959510","fontStyle": "bold"},
 		"variable.readonly.builtin:python": { "foreground": "#959510", "fontStyle": "bold" },
 		"newOperator": "#959510",
 		"type.defaultLibrary:go": {
@@ -1862,6 +1892,14 @@
 		"event": "#886419",
 		"xmlDocCommentName": "#886419",
 		"function.defaultLibrary:go": {
+			"foreground": "#886419",
+			"fontStyle": "italic bold"
+		},
+		"function.builtin:python": {
+			"foreground": "#886419",
+			"fontStyle": "italic bold"
+		},
+		"selfParameter": {
 			"foreground": "#886419",
 			"fontStyle": "bold"
 		},
@@ -1913,6 +1951,10 @@
 			"fontStyle": "italic bold"
 		},
 		"typeParameter": "#6983c9",
+		"class.builtin:python": {
+			"foreground": "#6983c9",
+			"fontStyle": "bold"
+		},
 		"field": "#aa15ec",
 		"field.static": {
 			"foreground": "#aa15ec",
@@ -1955,7 +1997,7 @@
 			"foreground": "#886419",
 			"fontStyle": "italic bold"
 		},
-		"macro-keyword":{
+		"macro-keyword": {
 			"foreground": "#e318ef",
 			"fontStyle": ""
 		},
@@ -1995,8 +2037,7 @@
 			"foreground": "#2e71ff"
 		},
 		"warning": "#7a6917",
-		"note":  "#396fa5"
-		
+		"note": "#396fa5"
 	},
 	"semanticHighlighting": true
 }

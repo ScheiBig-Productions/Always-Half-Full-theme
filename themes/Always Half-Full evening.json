@@ -1071,6 +1071,16 @@
 		},
 		{
 			"scope": [
+				// Python dunder methods
+				"support.function.magic.python",
+			],
+			"settings": {
+				"foreground": "#9e9e9e",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [
 				// Comments
 				"comment",
 				"punctuation.definition.comment",
@@ -1211,16 +1221,28 @@
 		},
 		{
 			"scope": [
+				// Python `self` parameter
+				"variable.parameter.function.language.special.self.python"
+			],
+			"settings": {
+				"foreground": "#ad7904",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [
 				// XML-like language tag name
 				"entity.name.tag",
 				// Zig @-buildIns
 				"support.function.builtin.zig",
 				// go build-ins
 				"support.function.builtin.go",
+				// Python build-ins
+				"support.function.builtin.python",
 			],
 			"settings": {
 				"foreground": "#ad7904",
-				"fontStyle": "bold"
+				"fontStyle": "italic bold"
 			}
 		},
 		{
@@ -1528,7 +1550,11 @@
 				// Markdown image alt text
 				"string.other.link.description.markdown",
 				// Markdown separators
-				"meta.separator.markdown"
+				"meta.separator.markdown",
+				// Python Sphinx doc tags
+				"docstring.variable.identifier.sphinx.python",
+				"docstring.variable.begin.sphinx.python",
+				"docstring.variable.end.sphinx.python",
 			],
 			"settings": {
 				"foreground": "#ce3f7a"
@@ -1818,6 +1844,10 @@
 		},
 		"operator": "#9e9e9e",
 		"operatorOverloaded": "#9e9e9e",
+		"magicFunction": {
+			"foreground": "#9e9e9e",
+			"fontStyle": "italic"
+		},
 		"namespace": "#9e9e9e",
 		"comment": "#6a6a6a",
 		"xmlDocCommentDelimiter": "#6b795a",
@@ -1865,6 +1895,14 @@
 		"event": "#ad7904",
 		"xmlDocCommentName": "#ad7904",
 		"function.defaultLibrary:go": {
+			"foreground": "#ad7904",
+			"fontStyle": "italic bold"
+		},
+		"function.builtin:python": {
+			"foreground": "#ad7904",
+			"fontStyle": "italic bold"
+		},
+		"selfParameter": {
 			"foreground": "#ad7904",
 			"fontStyle": "bold"
 		},
@@ -1916,6 +1954,10 @@
 			"fontStyle": "italic bold"
 		},
 		"typeParameter": "#7a82af",
+		"class.builtin:python": {
+			"foreground": "#7a82af",
+			"fontStyle": "bold"
+		},
 		"field": "#9a60b3",
 		"field.static": {
 			"foreground": "#9a60b3",

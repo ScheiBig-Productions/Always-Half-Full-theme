@@ -2,6 +2,17 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.8.12] - 2024.04.25
+
+Slight revamp of Python:
+
+- `self` parameter - in many languages, `this` is considered keyword (or soft - keyword), in Python it is a parameter. To make some sort of compromise, it is now represented as builtin / foreign,
+- builtin-functions - to adhere to coloring introduced in Go and Zig, it gets same color (and format is changed to italic - that represents functions - in Go and Zig),
+- builtin-classes - making them color of keywords, would actually decrease readability, however color of built-in variables is very weak too (it is only used in JS and string escape seq - it is hard to read in normal settings), so the choice goes to type-param color - as it is not implemented in Python LSP,
+- dunder methods - these are "magic" methods, that either provide functionality for builtin functions (C++-style concept interfacing), or add operator overloading to classes - the second was chosen as new color, with function formatting (italics - to differentiate from operators and improve visual readability).
+
+Most of these are implemented as semantic tokens. Also added some level of support for docstring Sphinx tags.
+
 ## [0.8.11] - 2024.04.20
 
 Fixed whitespace markers in *afternoon*.

@@ -1072,6 +1072,16 @@
 		},
 		{
 			"scope": [
+				// Python dunder methods
+				"support.function.magic.python",
+			],
+			"settings": {
+				"foreground": "#777777",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [
 				// Comments
 				"comment",
 				"punctuation.definition.comment",
@@ -1212,16 +1222,28 @@
 		},
 		{
 			"scope": [
+				// Python `self` parameter
+				"variable.parameter.function.language.special.self.python"
+			],
+			"settings": {
+				"foreground": "#846625",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [
 				// XML-like language tag name
 				"entity.name.tag",
 				// Zig @-buildIns
 				"support.function.builtin.zig",
 				// go build-ins
 				"support.function.builtin.go",
+				// Python build-ins
+				"support.function.builtin.python",
 			],
 			"settings": {
 				"foreground": "#846625",
-				"fontStyle": "bold"
+				"fontStyle": "italic bold"
 			}
 		},
 		{
@@ -1529,7 +1551,11 @@
 				// Markdown image alt text
 				"string.other.link.description.markdown",
 				// Markdown separators
-				"meta.separator.markdown"
+				"meta.separator.markdown",
+				// Python Sphinx doc tags
+				"docstring.variable.identifier.sphinx.python",
+				"docstring.variable.begin.sphinx.python",
+				"docstring.variable.end.sphinx.python",
 			],
 			"settings": {
 				"foreground": "#9b496b"
@@ -1819,6 +1845,10 @@
 		},
 		"operator": "#777777",
 		"operatorOverloaded": "#777777",
+		"magicFunction": {
+			"foreground": "#777777",
+			"fontStyle": "italic"
+		},
 		"namespace": "#777777",
 		"comment": "#6a6a6a",
 		"xmlDocCommentDelimiter": "#646e5a",
@@ -1866,6 +1896,14 @@
 		"event": "#846625",
 		"xmlDocCommentName": "#846625",
 		"function.defaultLibrary:go": {
+			"foreground": "#846625",
+			"fontStyle": "italic bold"
+		},
+		"function.builtin:python": {
+			"foreground": "#846625",
+			"fontStyle": "italic bold"
+		},
+		"selfParameter": {
 			"foreground": "#846625",
 			"fontStyle": "bold"
 		},
@@ -1917,6 +1955,10 @@
 			"fontStyle": "italic bold"
 		},
 		"typeParameter": "#616892",
+		"class.builtin:python": {
+			"foreground": "#616892",
+			"fontStyle": "bold"
+		},
 		"field": "#845b96",
 		"field.static": {
 			"foreground": "#845b96",
@@ -2000,7 +2042,6 @@
 		},
 		"warning": "#645a23",
 		"note":  "#245b8d"
-		
 	},
 	"semanticHighlighting": true
 }
