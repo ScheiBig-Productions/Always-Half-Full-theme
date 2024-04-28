@@ -2,6 +2,10 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.8.14] - 2024.04.28
+
+Add `cls` parameter to Python - same formatting as `self`.
+
 ## [0.8.13] - 2024.04.25
 
 Fix inconsistencies introduced in previous patch and further revamp Python:

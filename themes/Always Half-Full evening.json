@@ -1224,8 +1224,9 @@
 		},
 		{
 			"scope": [
-				// Python `self` parameter
-				"variable.parameter.function.language.special.self.python"
+				// Python `self` / `cls` parameter
+				"variable.parameter.function.language.special.self.python",
+				"variable.language.special.cls.python"
 			],
 			"settings": {
 				"foreground": "#ad7904",
@@ -1905,6 +1906,10 @@
 			"fontStyle": "italic bold"
 		},
 		"selfParameter": {
+			"foreground": "#ad7904",
+			"fontStyle": "bold"
+		},
+		"clsParameter": {
 			"foreground": "#ad7904",
 			"fontStyle": "bold"
 		},
