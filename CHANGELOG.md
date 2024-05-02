@@ -2,6 +2,10 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.8.15] - 2024.05.02
+
+Add double quoted identifiers in PL/SQL - they use style from SAS Named Literals, as they are same thing.
+
 ## [0.8.14] - 2024.04.28
 
 Add `cls` parameter to Python - same formatting as `self`.

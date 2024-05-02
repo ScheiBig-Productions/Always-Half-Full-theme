@@ -1031,6 +1031,16 @@
 		},
 		{
 			"scope": [
+				// Named literals in PL/SQL
+				"string.quoted.double.oracle_sql"
+			],
+			"settings": {
+				"foreground": "#c6c6c6",
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"scope": [
 				// Basic operators
 				"keyword.operator",
 				"entity.name.operator",
@@ -1226,7 +1236,7 @@
 			"scope": [
 				// Python `self` / `cls` parameter
 				"variable.parameter.function.language.special.self.python",
-				"variable.language.special.cls.python"
+				"variable.parameter.function.language.special.cls.python"
 			],
 			"settings": {
 				"foreground": "#ad7904",
