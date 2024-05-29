@@ -2,6 +2,14 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.8.16] - 2024.05.29
+
+Slightly tweak color of selection and matches in editor, to sacrifice some visual context, to make it more readable to work witch multi-cursors.
+
+Also revamp the light variants:
+- morning variant now has slightly brighter backgrounds, so it does not stand out from other editors in light mode (afternoon does not change - it still is a variant that should be easier on eyes),
+- all light variants no have much brighter colors of status bar - it especially helps when you use `"debug.toolBarLocation": "commandCenter"` setting, as command center uses `"statusBar.debuggingBackground"` color with some alfa when displaying debug buttons - previously, they were hard to see, as it resulted in dark buttons on semi-dark background.
+
 ## [0.8.15] - 2024.05.02
 
 Add double quoted identifiers in PL/SQL - they use style from SAS Named Literals, as they are same thing.
