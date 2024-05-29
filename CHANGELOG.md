@@ -2,6 +2,10 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.8.17] - 2024.05.29
+
+Further tweak status bar colors.
+
 ## [0.8.16] - 2024.05.29
 
 Slightly tweak color of selection and matches in editor, to sacrifice some visual context, to make it more readable to work witch multi-cursors.
