@@ -1013,7 +1013,9 @@
 				// Basic variables (fix in template)
 				"meta.template.expression variable.other.readwrite",
 				// Any variables in JSDoc (no semantic tokens as of now)
-				"variable.other.jsdoc"
+				"variable.other.jsdoc",
+				// PHP variables
+				"variable.other.php",
 			],
 			"settings": {
 				"foreground": "#c6c6c6"
@@ -1037,6 +1039,18 @@
 			"settings": {
 				"foreground": "#c6c6c6",
 				"fontStyle": "underline"
+			}
+		},
+		{
+			"scope": [
+				// Constants
+				"support.constant.core.php",
+				"constant.other.php",
+				"constant.other.class.php",
+			],
+			"settings": {
+				"foreground": "#c6c6c6",
+				"fontStyle": "bold"
 			}
 		},
 		{
@@ -1066,6 +1080,8 @@
 				"entity.other.attribute-name.namespace",
 				"entity.name.scope-resolution",
 				"entity.name.scope-resolution.namespace.using",
+				"support.other.namespace.php",
+				"entity.name.type.namespace.php",
 				// "constant.other.database-name.sql", // Database as namespace
 				// Markdown `< >` used as link delimiters
 				"meta.link.email.lt-gt.markdown",
@@ -1209,6 +1225,16 @@
 		},
 		{
 			"scope": [
+				// Blade keywords
+				"keyword.blade",
+			],
+			"settings": {
+				"foreground": "#a58f14",
+				"fontStyle": "italic bold"
+			}
+		},
+		{
+			"scope": [
 				// Basic functions
 				"entity.name.function",
 				"support.function",
@@ -1219,6 +1245,16 @@
 			],
 			"settings": {
 				"foreground": "#bf6e3f"
+			}
+		},
+		{
+			"scope": [
+				// Blade functions
+				"entity.name.function.blade"
+			],
+			"settings": {
+				"foreground": "#bf6e3f",
+				"fontStyle": "italic bold"
 			}
 		},
 		{
@@ -1326,7 +1362,8 @@
 			"scope": [
 				// Enum members
 				"meta.enum variable",
-				"constant.other.enum.java"
+				"constant.other.enum.java",
+				"constant.enum.php",
 			],
 			"settings": {
 				"foreground": "#6e9999",
@@ -1368,10 +1405,31 @@
 				"entity.name.tag support.class.component",
 				// Regex character classes
 				"constant.other.character-class.regexp",
-				"punctuation.definition.character-class.regexp"
+				"punctuation.definition.character-class.regexp",
+				// PHP Classes
+				"support.class.php",
+				"entity.other.inherited-class.php",
+				"meta.use.php entity.other.alias.php",
+				"meta.other.type.phpdoc.php",
+				"support.class.builtin.php",
+				// Blade components
+				"text.html.php.blade meta.tag.custom entity.name.tag.html",
+				"text.html.php.blade invalid.illegal.unrecognized-tag",
 			],
 			"settings": {
 				"foreground": "#5b96d7"
+			}
+		},
+		{
+			"scope": [
+				// Traits
+				"entity.name.type.trait.php",
+				// Interfaces
+				"entity.name.type.interface.php",
+			],
+			"settings": {
+				"foreground": "#5b96d7",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -1401,7 +1459,8 @@
 		{
 			"scope": [
 				// Enums
-				"entity.name.type.enum.java"
+				"entity.name.type.enum.java",
+				"entity.name.type.enum.php",
 			],
 			"settings": {
 				"foreground": "#5b96d7",
@@ -1460,7 +1519,8 @@
 				"keyword.operator.rest",
 				"punctuation.definition.parameters.varargs",
 				"punctuation.vararg-ellipses",
-				"keyword.operator.unpacking"
+				"keyword.operator.unpacking",
+				"keyword.operator.variadic.php",
 				/*
 				// Object / array / dictionary literals brackets/braces and commas
 				// - JSON/JS/TS
@@ -1503,7 +1563,7 @@
 				// Makefile variables
 				"variable.other.makefile",
 				// Markdown list elements
-				"punctuation.definition.list.begin.markdown"
+				"punctuation.definition.list.begin.markdown",
 			],
 			"settings": {
 				"foreground": "#9a60b3",
@@ -1518,6 +1578,16 @@
 			"settings": {
 				"foreground": "#9a60b3",
 				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [
+				// PHP variable dollar
+				"punctuation.definition.variable.php",
+			],
+			"settings": {
+				"foreground": "#9a60b3",
+				"fontStyle": "bold"
 			}
 		},
 		{
@@ -1542,6 +1612,7 @@
 				"storage.type.class.doxygen",
 				"punctuation.definition.block.tag",
 				"keyword.other.documentation.javadoc",
+				"keyword.other.phpdoc.php",
 				// Decorator-type metadata
 				"meta.decorator",
 				"entity.name.function.decorator",
@@ -1551,6 +1622,7 @@
 				"punctuation.definition.annotation",
 				"support.other.attribute.cpp",
 				"support.other.attribute.cpp punctuation.section",
+				"meta.attribute.php",
 				// Document break in YAML
 				"entity.other.document",
 				// YAML directives
@@ -1578,7 +1650,7 @@
 		},
 		{
 			"scope": [
-				// Regex negative ook-ahead
+				// Regex negative look-ahead
 				"meta.assertion.negative-look-ahead.regexp"
 			],
 			"settings": {
@@ -1589,7 +1661,13 @@
 		{
 			"scope": [
 				// C & C++ macros
-				"entity.name.function.preprocessor"
+				"entity.name.function.preprocessor",
+				// PHP entry tag
+				"punctuation.section.embedded.begin.php",
+				"punctuation.section.embedded.end.php",
+				// Blade php block
+				"keyword.begin.blade",
+				"keyword.end.blade",
 			],
 			"settings": {
 				"foreground": "#ce3f7a",
@@ -1600,6 +1678,10 @@
 			"scope": [
 				// Parameters
 				"variable.parameter",
+				"entity.name.variable.parameter.php",
+				"meta.function.parameter.typehinted.php variable.other.php",
+				"meta.function.parameter.default.php variable.other.php",
+				"meta.function.parameter.no-default.php variable.other.php",
 			],
 			"settings": {
 				"foreground": "#aa8791",
@@ -1622,13 +1704,14 @@
 				"punctuation.definition.quote.begin.markdown"
 			],
 			"settings": {
-				"foreground": "#aa8791"
+				"foreground": "#aa8791",
+				"fontStyle": ""
 			}
 		},
 		{
 			"scope": [
 				// Angular attribute binding
-				"punctuation.definition.ng-binding-name"
+				"punctuation.definition.ng-binding-name",
 			],
 			"settings": {
 				"foreground": "#aa8791",
@@ -1654,6 +1737,9 @@
 				"punctuation.definition.template-expression",
 				"constant.character.format.placeholder",
 				"punctuation.definition.interpolation",
+				// Blade expressions
+				"support.function.construct.begin.blade",
+				"support.function.construct.end.blade",
 				// Java generic wildcard
 				"storage.type.generic.wildcard.java",
 				// Regex look-behind
@@ -1871,12 +1957,30 @@
 		"comment": "#6a6a6a",
 		"xmlDocCommentDelimiter": "#6b795a",
 		"xmlDocCommentText": "#6b795a",
-		"keyword": { "foreground": "#a58f14", "fontStyle": "" },
-		"builtinConstant": { "foreground": "#a58f14", "fontStyle": "" },
-		"variable.readonly.builtin:python": { "foreground": "#a58f14", "fontStyle": "" },
-		"newOperator": { "foreground": "#a58f14", "fontStyle": "" },
-		"type.defaultLibrary:go": { "foreground": "#a58f14", "fontStyle": "" },
-		"variable.defaultLibrary:go": { "foreground": "#a58f14", "fontStyle": "" },
+		"keyword": {
+			"foreground": "#a58f14",
+			"fontStyle": ""
+		},
+		"builtinConstant": {
+			"foreground": "#a58f14",
+			"fontStyle": ""
+		},
+		"variable.readonly.builtin:python": {
+			"foreground": "#a58f14",
+			"fontStyle": ""
+		},
+		"newOperator": {
+			"foreground": "#a58f14",
+			"fontStyle": ""
+		},
+		"type.defaultLibrary:go": {
+			"foreground": "#a58f14",
+			"fontStyle": ""
+		},
+		"variable.defaultLibrary:go": {
+			"foreground": "#a58f14",
+			"fontStyle": ""
+		},
 		"function": {
 			"foreground": "#bf6e3f",
 			"fontStyle": "italic",

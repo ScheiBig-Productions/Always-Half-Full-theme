@@ -2,6 +2,18 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.8.18] - 2024.09.07
+
+Add support for PHP and Blade templating engine. Since neither PHP, nor Blade provide semantic highlighting, tokens are based only on (unfortunately poor sometimes) textMate tokens:
+- type-based tokens, like classes, enums, interfaces and traits are properly formatted on declaration, however they are all styled as class elsewhere,
+- functions imported with `use function` declaration, are styled on import line as classes too, they are styled properly on usage however,
+- class properties declarations are styled as variables, even though their usages are styled correctly as fields/properties,
+- function parameters are styled properly only at declaration, their usage is styled as variables,
+- enum members are only properly styled at declaration, on usage they are styled as normal constant variables; static class constants are only styled as normal constants,
+- phpdoc types bug-out when spaces are present (like in `array<string, int>` after comma),
+- attribute classes are only styled on usage (in `#[ x ]` usages),
+- Blade supports `@` directives, *mustaches* and any name that can be used as component (even if does not resolve to existing one), `@php @endphp` / `<?php ?>` mapped to preprocessor macro syntax, @-keywords and @-functions to expected styles (but with bold weight, to match html tags), mustaches to same style as `${}` in JS string templates (or any other string interpolation construct). Binding attributes / livewire attributes are not styled.
+
 ## [0.8.17] - 2024.05.29
 
 Further tweak status bar colors.
