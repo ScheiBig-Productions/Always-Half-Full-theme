@@ -1,0 +1,25 @@
+let x = {
+	conf: {
+		name: "",
+		type: "",
+		filename: "",
+	},
+	col: {
+		txt: {},
+		bg: {},
+		brd: {},
+		tok: {},
+		dec: {
+			dr: {},
+			lg: {},
+		},
+		misc: {},
+	},
+	opa: {
+		fg: {},
+		bg: {},
+		edt: {},
+		com: {},
+		btn: {},
+	},
+}
