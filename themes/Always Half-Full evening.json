@@ -63,6 +63,7 @@
 		"badge.background": "#2d6398dd",
 		"progressBar.background": "#4a85c5",
 		"list.activeSelectionBackground": "#4a85c544",
+		"list.activeSelectionForeground": "#9e9e9e",
 		"list.dropBackground": "#4a85c588",
 		"list.focusHighlightForeground": "#4a85c5",
 		"list.focusOutline": "#4a85c5",
@@ -1379,19 +1380,15 @@
 			"fontStyle": ""
 		},
 		"variable": {
-			"foreground": "#c5c5c5",
 			"fontStyle": ""
 		},
 		"variable.static": {
-			"foreground": "#c5c5c5",
 			"fontStyle": "underline"
 		},
 		"variable.readonly": {
-			"foreground": "#c5c5c5",
 			"fontStyle": "bold"
 		},
 		"variable.static.readonly": {
-			"foreground": "#c5c5c5",
 			"fontStyle": "bold underline"
 		},
 		"operator": {

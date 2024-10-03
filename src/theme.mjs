@@ -128,7 +128,7 @@ export function getTheme(from) {
 			// || Lists and trees
 			// :: ==
 			"list.activeSelectionBackground": t(col.tok?.azure, opa.bg?.m4),
-			// "list.activeSelectionForeground": "",
+			"list.activeSelectionForeground": col.txt?.m2,
 			// "list.activeSelectionIconForeground": "",
 			"list.dropBackground": t(col.tok?.azure, opa.bg?.m8),
 			// "list.focusBackground": "",
@@ -1778,19 +1778,19 @@ export function getTheme(from) {
 				"fontStyle": ""
 			},
 			"variable": {
-				"foreground": col.txt?.m1,
+				// "foreground": col.txt?.m1,
 				"fontStyle": ""
 			},
 			"variable.static": {
-				"foreground": col.txt?.m1,
+				// "foreground": col.txt?.m1,
 				"fontStyle": "underline"
 			},
 			"variable.readonly": {
-				"foreground": col.txt?.m1,
+				// "foreground": col.txt?.m1,
 				"fontStyle": "bold"
 			},
 			"variable.static.readonly": {
-				"foreground": col.txt?.m1,
+				// "foreground": col.txt?.m1,
 				"fontStyle": "bold underline"
 			},
 			"operator": {

@@ -1005,6 +1005,7 @@
 		"pullRequests.merged": "#aa15ec",
 		"pullRequests.notification": "#5b96d7",
 		"pullRequests.open": "#029902",
+		
 	},
 	"tokenColors": [
 		{
