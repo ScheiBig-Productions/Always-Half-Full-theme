@@ -2,6 +2,21 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.9.0] - 2024.10.03
+
+### Migrate to build step and OKLCH color space
+
+From beginning of development, process of modification existing / creating new variants of themes was extremely tedious - one full theme json has over 1.5k LOM (lines of markup) and because of large color pallette, search-and-replace in new files was not so obvious, since it was easy to miss some colors, or to make errors in tokens that use same color in specific variant, but it has two meanings. 
+
+Additionally, theme json can only be supplied with rgb hex values, so it was necessary to manually synchronize color dictionaries and export them from CIELab to RGB.
+
+Introduction of build step allows to remove most of those issues - now theme specification is split into theme generation, which accepts color pallette config and outputs POJO with complete theme, and into color pallette specification, which is config object that contains semantic definitions of colors and variant-specific opacity values.
+
+Additionally, dynamic generation of theme files from configs, allowed to decouple manual mappings from alternative color space to RGB - now definitions contain calls to function, that automatically maps input colors. This allowed for pain-free migration to OKLCH color space - OK definition fixes various problems of CIE definition, which resulted in not-so the same L values in color definitions, while LCH triumphs over Lab with much more intuitive color selection model, closely resembling that of HSL.
+
+This change introduces major, but hopefully positive changes in colors used in themes - now they should be even more uniform, bringing them closer to the idea that guides this extension from the start. Since it breaks previously defined semver plan, v1.0.0 of extension will contain all languages build into VSCode (at time that it will release), and v1.1.0 will close backlog of planned languages. Most visible change is lowered saturation of colors in light variants, that allows better text contrast, as well as flipped background values in all but Evening - now lightest/darkest color is used for editor background, to allow more contrast in light variants, and less backlight in "black" variants.
+
+
 ## [0.8.18] - 2024.09.07
 
 Add support for PHP and Blade templating engine. Since neither PHP, nor Blade provide semantic highlighting, tokens are based only on (unfortunately poor sometimes) textMate tokens:

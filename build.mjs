@@ -18,9 +18,9 @@ console.log("\x1b[35mImporting midnight variant\x1b[0m")
 import * as midnight from './src/colors/midnight.mjs'
 themeVariants.push(midnight.template)
 
-// console.log("\x1b[35mImporting starlight variant\x1b[0m")
-// import * as starlight from './src/colors/starlight.mjs'
-// themeVariants.push(starlight.template)
+console.log("\x1b[35mImporting starlight variant\x1b[0m")
+import * as starlight from './src/colors/starlight.mjs'
+themeVariants.push(starlight.template)
 
 console.log("\x1b[35m-- Finished importing variants --\x1b[0m")
 

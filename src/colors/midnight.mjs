@@ -21,8 +21,8 @@ export const template = {
 			r2: oklch(0.2100, 0, 0).hex,
 			r1: oklch(0.1900, 0, 0).hex,
 			m:  oklch(0.1775, 0, 0).hex,
-			l1: oklch(0.1400, 0, 0).hex,
 			l2: oklch(0.0700, 0, 0).hex,
+			l1: oklch(0.1400, 0, 0).hex,
 		},
 	},
 	opa: evening.template.opa
