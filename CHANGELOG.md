@@ -2,6 +2,10 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.9.2] - 2025.01.16
+
+Update repository references.
+
 ## [0.9.1] - 2024.10.03
 
 Disable semantic token colors for variables (but not text weight / decorations) - this change is mostly dedicated to workaround decisions made in gopls and go itself (struct fields being tokenized as variables, `true` & `false` being normal variables) - at least those that are possible to workaround.
