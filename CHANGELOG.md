@@ -169,7 +169,7 @@ Fix critical bug in theme json file, lower VSCode version requirements.
 
 ## [0.8.0] - 2023-08-02
 
-Initial release of extension. Will be bumped to [0.9.0] once all [build-in extension syntaxes](https://github.com/microsoft/vscode/tree/9a281018181dca942cc46c03f9795be00912e38d/extensions "VSCode build-in extensions directory @ GitHub repository") are supported (that are on list of planned ones), and to [1.0.0] once all [currently planned](https://github.com/search?q=repo%3AScheiBig-Production%2FAlways-Half-Full-theme+created%3A%3C2023-08-02+author%3AScheiBig+author%3ANuttyJelly+state%3Aopen&type=Issues&ref=advsearch&l=&l= "List of unfinished Language Support tickets created before release date") are.
+Initial release of extension. Will be bumped to [0.9.0] once all [build-in extension syntaxes](https://github.com/microsoft/vscode/tree/9a281018181dca942cc46c03f9795be00912e38d/extensions "VSCode build-in extensions directory @ GitHub repository") are supported (that are on list of planned ones), and to [1.0.0] once all [currently planned](https://github.com/search?q=repo%3AScheiBig-Productions%2FAlways-Half-Full-theme+created%3A%3C2023-08-02+author%3AScheiBig+author%3ANuttyJelly+state%3Aopen&type=Issues&ref=advsearch&l=&l= "List of unfinished Language Support tickets created before release date") are.
 
 ### Added:
 - __Core UI__ - theming for all window surfaces,
