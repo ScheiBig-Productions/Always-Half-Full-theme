@@ -1836,6 +1836,9 @@ export function getTheme(from) {
 				// "foreground": col.txt?.m1,
 				"fontStyle": ""
 			},
+			"variable.classMember": {
+				"foreground": col.tok?.purple,
+			},
 			"variable.static": {
 				// "foreground": col.txt?.m1,
 				"fontStyle": "underline"

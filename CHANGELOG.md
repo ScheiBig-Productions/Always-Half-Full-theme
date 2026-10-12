@@ -2,6 +2,10 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.9.5] - 2026.10.12
+
+Fix class variables in python.
+
 ## [0.9.4] - 2026.02.17
 
 Fix missing tokenization for static classes.

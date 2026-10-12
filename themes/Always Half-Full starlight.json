@@ -1422,6 +1422,9 @@
 		"variable": {
 			"fontStyle": ""
 		},
+		"variable.classMember": {
+			"foreground": "#735880"
+		},
 		"variable.static": {
 			"fontStyle": "underline"
 		},

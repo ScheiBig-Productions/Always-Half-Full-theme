@@ -783,6 +783,7 @@
 		"variable": {
 			"fontStyle": ""
 		},
+		"variable.classMember": {},
 		"variable.static": {
 			"fontStyle": "underline"
 		},
