@@ -2,6 +2,12 @@
 
 All notable changes to the "always--half-full" extension will be documented in this file.
 
+## [0.10.0] - 2026.11.22
+
+Overhaul core tokens, providing support for Modern UI (Bento-UI style introduced in 2026). This change possibly breaks "Old" UI, which in version 1.147.0 (as of day of this update) is no longer default experience - therefore required VSCode version is bumped into one that introduces Modern UI.
+
+Also provided PowerShell support _as much as possible_ (only tokens that are actually available - it would seem that `ms-vscode.powershell` extension does not provide semantic highlighting and very poor TextMate highlighting).
+
 ## [0.9.5] - 2026.10.12
 
 Fix class variables in python.

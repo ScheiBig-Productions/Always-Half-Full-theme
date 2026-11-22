@@ -34,6 +34,7 @@ export function getTheme(from) {
 			// :: == == ==
 			// || Base colors
 			// :: ==
+			"surface.border": col.brd?.w,
 			"focusBorder": col.tok?.azure,
 			"foreground": t(col.txt?.c, opa.fg?.s2),
 			"disabledForeground": t(col.txt?.m1, "88"),
@@ -161,7 +162,7 @@ export function getTheme(from) {
 			// :: == == ==
 			// || Activity Bar
 			// :: ==
-			"activityBar.background": col.bg?.l1,
+			"activityBar.background": col.bg?.r2,
 			"activityBar.dropBorder": t(col.tok?.azure, opa.bg?.m8),
 			"activityBar.foreground": col.tok?.azure,
 			"activityBar.inactiveForeground": t(col.txt?.c, opa.fg?.s3),
@@ -179,12 +180,12 @@ export function getTheme(from) {
 			// :: == == ==
 			// || Side Bar
 			// :: ==
-			"sideBar.background": col.bg?.l1,
+			"sideBar.background": col.bg?.r2,
 			"sideBar.foreground": t(col.txt?.c, opa.fg?.s2),
 			"sideBar.border": col.brd?.w,
 			"sideBar.dropBackground": t(col.tok?.azure, opa.bg?.m8),
 			"sideBarTitle.foreground": t(col.txt?.c, opa.fg?.m1),
-			"sideBarSectionHeader.background": col.bg?.l1,
+			"sideBarSectionHeader.background": col.bg?.r2,
 			"sideBarSectionHeader.foreground": t(col.txt?.c, opa.fg?.m1),
 			"sideBarSectionHeader.border": col.brd?.w,
 			// :: == == ==
@@ -217,12 +218,12 @@ export function getTheme(from) {
 			"editorGroup.dropIntoPromptForeground": col?.tok?.white,
 			"editorGroup.dropIntoPromptBackground": col.dec?.dr?.azure,
 			"editorGroup.dropIntoPromptBorder": col.bg?.l1,
-			"tab.activeBackground": col.bg?.r2,
-			"tab.unfocusedActiveBackground": col.bg?.m,
+			// "tab.activeBackground": col.bg?.r2,
+			"tab.unfocusedActiveBackground": col.bg?.r2,
 			"tab.activeForeground": t(col.txt?.c, opa.fg?.m1),
 			"tab.border": col.brd?.w,
-			"tab.activeBorder": col.bg?.r2,
-			"tab.unfocusedActiveBorder": col.bg?.r1,
+			// "tab.activeBorder": col.bg?.m,
+			"tab.unfocusedActiveBorder": col.bg?.l1,
 			"tab.activeBorderTop": col.dec?.dr?.azure,
 			"tab.unfocusedActiveBorderTop": col.brd?.w,
 			"tab.lastPinnedBorder": col.tok?.azure,
@@ -249,6 +250,7 @@ export function getTheme(from) {
 			// :: ==
 			"editor.background": col.bg?.m,
 			"editor.foreground": col.txt?.m1,
+			"editor.border": col.brd?.w,
 			"editorLineNumber.foreground": t(col.txt?.c, opa.edt?.mln),
 			"editorLineNumber.activeForeground": col.dec?.lg?.azure,
 			"editorLineNumber.dimmedForeground": t(col.txt?.c, opa.edt?.sln),
@@ -487,6 +489,7 @@ export function getTheme(from) {
 			"panelSectionHeader.background": col.bg?.r3,
 			"panelSectionHeader.foreground": t(col.txt?.c, opa.fg?.m1),
 			"panelSectionHeader.border": col.brd?.s,
+			"modernPanel.border": col.brd?.w,
 			// :: == == ==
 			// || Status Bar colors
 			// :: ==
@@ -516,9 +519,9 @@ export function getTheme(from) {
 			// :: == == ==
 			// || Title Bar colors
 			// :: ==
-			"titleBar.activeBackground": col.bg?.l1,
+			"titleBar.activeBackground": col.bg?.l2,
 			"titleBar.activeForeground": t(col.txt?.c, opa.fg?.m1),
-			"titleBar.inactiveBackground": col.bg?.l1,
+			"titleBar.inactiveBackground": col.bg?.l2,
 			"titleBar.inactiveForeground": t(col.txt?.c, opa.fg?.s3),
 			"titleBar.border": col.bg?.l1,
 			// :: == == ==
@@ -607,7 +610,7 @@ export function getTheme(from) {
 			// :: == == ==
 			// || Integrated Terminal colors
 			// :: ==
-			"terminal.background": col.bg?.r1,
+			"terminal.background": col.bg?.r2,
 			"terminal.border": col.brd?.s,
 			"terminal.foreground": col.txt?.m1,
 			"terminal.ansiBlack": col.tok?.grey,
@@ -737,7 +740,7 @@ export function getTheme(from) {
 			// || Breadcrumbs colors
 			// :: ==
 			"breadcrumb.foreground": t(col.txt?.c, opa.fg?.s2),
-			"breadcrumb.background": col.bg?.r2,
+			"breadcrumb.background": col.bg?.m,
 			"breadcrumb.focusForeground": t(col.txt?.c, opa.fg?.m1),
 			"breadcrumb.activeSelectionForeground": col.tok?.azure,
 			"breadcrumbPicker.background": col.bg?.r1,
@@ -1434,6 +1437,7 @@ export function getTheme(from) {
 					"variable.other.object.property",
 					"variable.other.property",
 					"variable.other.constant.property",
+					"variable.other.member.powershell",
 					// YAML tag fields
 					"entity.name.tag.yaml",
 					// CSS properties
@@ -1470,6 +1474,8 @@ export function getTheme(from) {
 				"scope": [
 					// PHP variable dollar
 					"punctuation.definition.variable.php",
+					// PowerShell variable dollar
+					"punctuation.definition.variable.powershell",
 				],
 				"settings": {
 					"foreground": col.tok?.purple,
@@ -1509,6 +1515,9 @@ export function getTheme(from) {
 					"support.other.attribute.cpp",
 					"support.other.attribute.cpp punctuation.section",
 					"meta.attribute.php",
+					"support.function.attribute",
+					"meta.attribute.powershell",
+					"meta.attribute.powershell punctuation.section",
 					// Document break in YAML
 					"entity.other.document",
 					// YAML directives
